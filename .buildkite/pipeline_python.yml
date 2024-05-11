@@ -4,4 +4,3 @@ steps:
     plugin:
       - docker#v3.2.0:
           image: "3.12.3-slim-bookworm"
-          workdir: /app
