@@ -4,3 +4,4 @@ steps:
     plugins:
       - docker#v3.2.0:
           image: "python:3.12.3-slim-bookworm"
+          volume: /home/h-iida/work/buildkite-practice:/workdir
