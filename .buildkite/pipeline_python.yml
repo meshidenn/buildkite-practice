@@ -3,4 +3,4 @@ steps:
     command: "scripts/hello_world.py"
     plugins:
       - docker#v3.2.0:
-          image: "3.12.3-slim-bookworm"
+          image: "python:3.12.3-slim-bookworm"
