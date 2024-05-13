@@ -1,0 +1,16 @@
+steps:
+  - label: ":hammer: Build"
+    command: "scripts/build.sh"
+    key: build
+  
+  - label: ":test_tube: Test %n"
+    command: "scripts/test.sh"
+    key: test
+    depends: build
+    parallelism: 5
+
+  - wait:
+
+  - label: ":rocket: Deploy"
+    command: "scripts/deploy.sh"
+    key: deploy
