@@ -6,9 +6,7 @@ steps:
   - label: ":test_tube: Test"
     command: "scripts/test.sh"
     key: test
-    depends_on: build
 
   - label: ":rocket: Deploy"
     command: "scripts/deploy.sh"
     key: deploy
-    depends_on: test
