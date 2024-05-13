@@ -6,7 +6,7 @@ steps:
   - label: ":test_tube: Test %n"
     command: "scripts/test.sh"
     key: test
-    depends: build
+    depends_on: build
     parallelism: 5
 
   - wait:
