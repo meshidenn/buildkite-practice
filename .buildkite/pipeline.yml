@@ -3,9 +3,10 @@ steps:
     command: "scripts/build.sh"
     key: build
   
-  - label: ":test_tube: Test"
+  - label: ":test_tube: Test %n"
     command: "scripts/test.sh"
     key: test
+    parallelism: 5
 
   - label: ":rocket: Deploy"
     command: "scripts/deploy.sh"
